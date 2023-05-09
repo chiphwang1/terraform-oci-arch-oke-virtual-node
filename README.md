@@ -14,17 +14,17 @@ This Terraform stack facilitates the deployment of an Oracle Container Engine fo
 - [Terraform Installed](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
 
 
-Click [![Deploy to Oracle Cloud](https://oci-resourcemanager-plugin.plugins.oci.oraclecloud.com/latest/deploy-to-oracle-cloud.svg)](https://cloud.oracle.com/resourcemanager/stacks/create?region=home&zipUrl=https://github.com/chiphwang1/terraform-oci-arch-oke-virtual-node/archive/refs/tags/v2.zip)
+Click [![Deploy to Oracle Cloud](https://oci-resourcemanager-plugin.plugins.oci.oraclecloud.com/latest/deploy-to-oracle-cloud.svg)](https://cloud.oracle.com/resourcemanager/stacks/create?region=home&zipUrl=https://github.com/oracle-devrel/terraform-oci-arch-oke-virtual-node/archive/refs/tags/v1.zip)
 
 ## Installation of Terraform stack
 
 **1. Clone or download the contents of this repo** 
      
-     git clone https://github.com/chiphwang1/oci_oke_virtual_nodes.git
+     git clone https://github.com/oracle-devrel/terraform-oci-arch-oke-virtual-node.git
 
 **2. Change to the directory that holds the Terraform stack** 
 
-      cd ./oci_oke_virtual_nodes
+      cd ./terraform-oci-arch-oke-virtual-node.git
 
 **3. Populate the varaibles.tf file**
 

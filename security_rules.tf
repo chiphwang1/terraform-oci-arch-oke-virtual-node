@@ -218,6 +218,13 @@ resource "oci_core_network_security_group_security_rule" "pod_to_virtual_network
   source_type               = "NETWORK_SECURITY_GROUP"
   stateless                 = false
 
+   tcp_options {
+    destination_port_range {
+      min = "10250"
+      max = "10250"
+    }
+  }
+
 }
 
 # Security rules Kubernetes API subnet to Virtual Node network ###################################################
@@ -230,6 +237,13 @@ resource "oci_core_network_security_group_security_rule" "api_network_virtual_ne
   source                    = oci_core_subnet.kubernetes_api_endpoint_subnet.cidr_block
   source_type               = "CIDR_BLOCK"
   stateless                 = false
+
+tcp_options {
+    destination_port_range {
+      min = "10250"
+      max = "10250"
+    }
+  }
 
 }
 
